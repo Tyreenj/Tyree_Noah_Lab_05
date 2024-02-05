@@ -10,7 +10,7 @@ public class Main {
         double price;
         double shippingCost;
         double totalPrice;
-        String trash = "";
+        String trash;
         System.out.print("Enter the price of your item: ");
 
         if(in.hasNextDouble())
