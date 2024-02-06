@@ -6,34 +6,26 @@ public class ShipCostCalculator {
     public static void main(String[] args)
     {
 
-        /*class price
-        	main()
-        	    num totalPrice
-        	    num newPrice
-        	    num totalTax = 0
-        	    boolean anotherOne
-
-        	    do
-        	    	output “Please Enter the Price of your Item.”
-        	    	input newPrice
-        	    	totalPrice = totalPrice + newPrice
-        	    	output “Do you have another item? (Yes=true, No = false)”
-        	    	input anotherOne
-        	    while anotherOne == true
-
-        	    if totalPrice >= 100 then
-        	    	output “Total Price of all items is “ +totalPrice
-        	    output “Total Tax is “ +totalTax
-
-            	if totalPrice < 100 then
-        	    	totalTax = totalPrice * 0.02
-        	    	output “Total Price of all items is “ +totalPrice
-        	    	output “Total Tax is “ +totalTax
-        	return
-        end class */
+        /*
+        class shippingCost
+	        main()
+                num itemPrice
+                num shippingPrice
+                num totalPrice
+                output “Please enter the price of your item”
+                input itemPrice
+                if itemPrice < 100 then
+                    shippingPrice = 0.02 * itemPrice
+		        else
+                shippingPrice = 0
+                totalPrice = itemPrice + shippingPrice
+                output “The shipping cost is “ +shippingPrice “ and the total is “ +totalPrice
+            return
+        end class
+        */
 
 
-        Scanner in = new Scanner(System.in); // Input
+    Scanner in = new Scanner(System.in); // Input
 
         double price;
         double shippingCost;
