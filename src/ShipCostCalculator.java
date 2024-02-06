@@ -2,21 +2,21 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner;
 
-public class Main {
+public class ShipCostCalculator {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in); // Input
 
         double price;
         double shippingCost;
         double totalPrice;
         String trash;
-        System.out.print("Enter the price of your item: ");
+        System.out.print("Enter the price of your item: "); // Output asking for price
 
-        if(in.hasNextDouble())
+        if(in.hasNextDouble()) // Check if number is valid
         {
             price = in.nextDouble();
-            if(price >= 100)
+            if(price >= 100) // Compute Shipping Cost
             {
                 shippingCost = 0;
             }
@@ -28,7 +28,7 @@ public class Main {
             totalPrice = price + shippingCost;
             System.out.println("The shipping cost is " +shippingCost +" and the total is " +totalPrice);
         }
-        else
+        else // If number not valid
         {
             trash = in.nextLine();
             System.out.println("\nYou did not enter a valid price: " +trash);
