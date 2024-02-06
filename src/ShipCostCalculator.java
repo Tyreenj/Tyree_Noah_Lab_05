@@ -5,6 +5,34 @@ import java.util.Scanner;
 public class ShipCostCalculator {
     public static void main(String[] args)
     {
+
+        /*class price
+        	main()
+        	    num totalPrice
+        	    num newPrice
+        	    num totalTax = 0
+        	    boolean anotherOne
+
+        	    do
+        	    	output “Please Enter the Price of your Item.”
+        	    	input newPrice
+        	    	totalPrice = totalPrice + newPrice
+        	    	output “Do you have another item? (Yes=true, No = false)”
+        	    	input anotherOne
+        	    while anotherOne == true
+
+        	    if totalPrice >= 100 then
+        	    	output “Total Price of all items is “ +totalPrice
+        	    output “Total Tax is “ +totalTax
+
+            	if totalPrice < 100 then
+        	    	totalTax = totalPrice * 0.02
+        	    	output “Total Price of all items is “ +totalPrice
+        	    	output “Total Tax is “ +totalTax
+        	return
+        end class */
+
+
         Scanner in = new Scanner(System.in); // Input
 
         double price;
